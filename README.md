@@ -14,7 +14,6 @@ The objective was to detect and block unauthorized activities (like port scans a
 - Deploy **Snort3** in both IDS and IPS modes to monitor and block malicious traffic.
 - Deploy **Cowrie** honeypot on a decoy SSH port to observe attacker behavior.
 - Tune **Snort rules** to apply thresholding for port scan and brute-force detection.
-- Host a basic **Flask web app** and validate Snort’s behavior under different traffic scenarios.
 - Automate deployment using a Bash script `auto.sh`.
 
 ---
@@ -33,8 +32,7 @@ The objective was to detect and block unauthorized activities (like port scans a
 - Created custom **Snort rules** for:
   - Dropping port scans with threshold > 15 in 60 seconds.
   - Dropping SSH brute-force attempts with > 20 login attempts in 60 seconds.
-  - Web app access rules were alert-only to avoid blocking legitimate traffic.
-- Observed Snort misclassifying web traffic due to faulty thresholds. Solved it by tuning thresholds properly and refining rule logic.
+- Observed Snort misclassifying traffic due to faulty thresholds. Solved it by tuning thresholds properly and refining rule logic.
 
 ### Phase 3: Cowrie Honeypot Deployment
 
@@ -82,7 +80,6 @@ This script automatically sets up Snort and Cowrie and tears everything down cle
 |------------|-------------------------------------|--------|----------------------------|
 | 1000001    | TCP Port Scan                       | drop   | 15 attempts in 60 seconds  |
 | 1000002    | SSH Brute Force on port 2223        | drop   | 20 attempts in 60 seconds  |
-| 1000003+   | Web app attack patterns (e.g. SQLi) | alert  | Custom thresholds per rule |
 
 ---
 
