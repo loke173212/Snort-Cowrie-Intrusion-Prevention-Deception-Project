@@ -108,8 +108,8 @@ This script automatically sets up Snort and Cowrie and tears everything down cle
 | Description                          | Screenshot |
 |--------------------------------------|------------|
 | 🔍 Port scan *before* Snort deployed | ![before](screenshots/port-scan-before.png) |
-| 🛡️ Snort *detecting & blocking* scan | ![blocked](screenshots/port-scan-blocked.png) |
 | 🧠 Snort in *IDS* mode                | ![ids](screenshots/snort-ids.png) |
+| 🛡️ Snort *detecting & blocking* scan | ![blocked](screenshots/port-scan-blocked.png) |
 | 🎯 Cowrie honeypot triggered         | ![cowrie](screenshots/honeypot-activity.png) |
 
 > _Note: Replace image paths if needed._
