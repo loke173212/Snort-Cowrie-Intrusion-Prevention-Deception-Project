@@ -1,0 +1,5 @@
+# Drop TCP Port Scan
+drop tcp any any -> any any (msg:"TCP Port Scan detected and dropped"; flags:S; sid:1000001; rev:2;)
+
+# Drop SSH Brute Force
+drop tcp any any -> any 2223 (msg:"SSH Brute Force Attempt"; flags:S; dsize:0; sid:1000002; rev:1;)
