@@ -107,11 +107,10 @@ This script automatically sets up Snort and Cowrie and tears everything down cle
 
 | Description                          | Screenshot |
 |--------------------------------------|------------|
-| 🔍 Port scan *before* Snort deployed | ![before](images/port-scan-before.png) |
-| 🛡️ Snort *detecting & blocking* scan | ![blocked](images/port-scan-blocked.png) |
-| 🧠 Snort in *IDS* mode                | ![ids](images/snort-ids.png) |
-| 🔥 EC2 under attack                  | ![ec2](images/ec2-under-attack.png) |
-| 🎯 Cowrie honeypot triggered         | ![cowrie](images/honeypot-activity.png) |
+| 🔍 Port scan *before* Snort deployed | ![before](screenshots/port-scan-before.png) |
+| 🛡️ Snort *detecting & blocking* scan | ![blocked](screenshots/port-scan-blocked.png) |
+| 🧠 Snort in *IDS* mode                | ![ids](screenshots/snort-ids.png) |
+| 🎯 Cowrie honeypot triggered         | ![cowrie](screenshots/honeypot-activity.png) |
 
 > _Note: Replace image paths if needed._
 
